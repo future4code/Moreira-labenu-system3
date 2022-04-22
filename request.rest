@@ -2,7 +2,7 @@
  Content-Type: application/json
 
  {
-    "nome": "F"    
+    "nome": "A"    
  }
 
 ### 
@@ -19,10 +19,11 @@ POST http://localhost:3003/estudant
 Content-Type: application/json
 
 {
-    "nome": "Brito",
-    "email": "brito@gmail.com",
+    "nome": "henrique",
+    "email": "hshenrique@gmail.com",
     "data_nasc": "1990-12-24",
-    "turma_id":  5
+    "turma_id":  1650658775781,
+    "hobby": ["nadar", "correr"]
 }
 
 ###

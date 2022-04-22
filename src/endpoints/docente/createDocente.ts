@@ -17,6 +17,7 @@ export default async function createDocente(
       
       const novoDocente = new Docente(nome, email, data_nasc, turma_id, Especialidade.POO)
       await connection("docente").insert({
+         id: Date.now(),
          nome: novoDocente.getDocenteNome(),
          email: novoDocente.getDocenteEmail(),
          data_nasc: novoDocente.getDocenteData_nasc(),

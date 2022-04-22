@@ -16,6 +16,7 @@ export default async function createTurma(
       }
       const novaTurma = new Turma( nome, Module.five);
       await connection("turma").insert({
+         id: Date.now(),
          nome: novaTurma.getTurmaNome(),
          modulo: novaTurma.modulo
       })
@@ -29,8 +30,8 @@ export default async function createTurma(
          res.send(error)
       } else {
          
-         console.log(error.sqlMessage || error.message);
-         res.status(500).send("Ops! Um erro inesperado ocorreu =/")
+         //console.log(error.sqlMessage || error.message);
+         res.status(500).send(error.sqlMessage || error.message)
       }
 
    }
