@@ -3,7 +3,7 @@ export class Estudante {
         private nome: string,
         private email:string,
         private data_nasc: string,
-        private turma_id: string,        
+        private turma_id: string,                
     ) {}
 
     public getEstudanteNome = (): string => {
